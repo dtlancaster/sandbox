@@ -35,6 +35,16 @@ class SinglyLinkedList:
         """
 
         return self.head is None
+    
+    def size(self):
+        current = self.head
+        count = 0
+        
+        while current:
+            count += 1
+            current = current.next_node
+        
+        return count
 
     def __len__(self):
         """
@@ -114,12 +124,13 @@ class SinglyLinkedList:
         if index == 0:
             return self.head
 
-        current = self.head
-        position = 0
+        else:
+            current = self.head
+            position = 0
 
-        while position < index:
-            current = current.next_node
-            position += 1
+            while position < index:
+                current = current.next_node
+                position += 1
 
         return current
 
