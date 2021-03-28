@@ -1,3 +1,8 @@
+"""
+Renames test1.txt, test2.txt, and test3.txt all at once.
+"""
+
+
 import os
 
 def main():
