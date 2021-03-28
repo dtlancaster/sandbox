@@ -7,7 +7,7 @@ Data is then presented in JSON format.
 import requests
 from pprint import pprint
 
-key = '93f3769b46a3f9c4a200501bf04136ef' # my API key from OpenWeatherMap
+key = input("Enter your OpenWeatherMap API Key: ")
 
 city_name = input("Enter a city: ")
 
